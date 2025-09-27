@@ -189,7 +189,7 @@ my $client = LicenseChain::SDK->new({
     api_key  => 'your-api-key',
     app_name => 'your-app-name',
     version  => '1.0.0',
-    base_url => 'https://api.licensechain.com'  # Optional
+    base_url => 'https://api.licensechain.app'  # Optional
 });
 ```
 
@@ -295,7 +295,7 @@ export LICENSECHAIN_APP_NAME=your-app-name
 export LICENSECHAIN_APP_VERSION=1.0.0
 
 # Optional
-export LICENSECHAIN_BASE_URL=https://api.licensechain.com
+export LICENSECHAIN_BASE_URL=https://api.licensechain.app
 export LICENSECHAIN_DEBUG=true
 ```
 
@@ -306,7 +306,7 @@ my $client = LicenseChain::SDK->new({
     api_key     => 'your-api-key',
     app_name    => 'your-app-name',
     version     => '1.0.0',
-    base_url    => 'https://api.licensechain.com',
+    base_url    => 'https://api.licensechain.app',
     timeout     => 30,        # Request timeout in seconds
     retries     => 3,         # Number of retry attempts
     debug       => 0,         # Enable debug logging
@@ -454,10 +454,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support
 
-- **Documentation**: [https://docs.licensechain.com/perl](https://docs.licensechain.com/perl)
+- **Documentation**: [https://docs.licensechain.app/perl](https://docs.licensechain.app/perl)
 - **Issues**: [GitHub Issues](https://github.com/LicenseChain/LicenseChain-Perl-SDK/issues)
 - **Discord**: [LicenseChain Discord](https://discord.gg/licensechain)
-- **Email**: support@licensechain.com
+- **Email**: support@licensechain.app
 
 ## 🔗 Related Projects
 
