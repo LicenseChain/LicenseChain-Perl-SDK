@@ -72,7 +72,8 @@ sub validate {
     my ($self, $license_key) = @_;
     validate_not_empty($license_key, 'license_key');
     
-    my $response = $self->{client}->post('/licenses/validate', { license_key => $license_key });
+    # Use /licenses/verify endpoint with 'key' parameter to match API
+    my $response = $self->{client}->post('/licenses/verify', { key => $license_key });
     return $response->{valid} || 0;
 }
 
