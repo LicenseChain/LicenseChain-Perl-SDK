@@ -478,3 +478,19 @@ All endpoints automatically use the /v1 prefix when connecting to https://api.li
 ### Base URL
 - **Production**: https://api.licensechain.app/v1\n- **Development**: https://api.licensechain.app/v1\n\n### Available Endpoints\n\n| Method | Endpoint | Description |\n|--------|----------|-------------|\n| GET | /v1/health | Health check |\n| POST | /v1/auth/login | User login |\n| POST | /v1/auth/register | User registration |\n| GET | /v1/apps | List applications |\n| POST | /v1/apps | Create application |\n| GET | /v1/licenses | List licenses |\n| POST | /v1/licenses/verify | Verify license |\n| GET | /v1/webhooks | List webhooks |\n| POST | /v1/webhooks | Create webhook |\n| GET | /v1/analytics | Get analytics |\n\n**Note**: The SDK automatically prepends /v1 to all endpoints, so you only need to specify the path (e.g., /auth/login instead of /v1/auth/login).
 
+
+## LicenseChain API (v1)
+
+This SDK targets the **LicenseChain HTTP API v1** implemented by the open-source API service.
+
+- **Production base URL:** https://api.licensechain.app/v1
+- **API repository (source of routes & behavior):** https://github.com/LicenseChain/api
+- **Baseline REST mapping (documented for integrators):**
+  - GET /health
+  - POST /auth/register
+  - POST /licenses/verify
+  - PATCH /licenses/:id/revoke
+  - PATCH /licenses/:id/activate
+  - PATCH /licenses/:id/extend
+  - GET /analytics/stats
+

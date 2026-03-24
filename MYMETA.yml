@@ -1,0 +1,51 @@
+---
+abstract: unknown
+author:
+  - 'LicenseChain Team <support@licensechain.app>'
+build_requires:
+  ExtUtils::MakeMaker: '6.48'
+  Test::Exception: '0.4'
+  Test::MockObject: '1.20180705'
+  Test::More: '0.98'
+  Test::Warnings: '0.026'
+configure_requires:
+  ExtUtils::MakeMaker: '6.48'
+dynamic_config: 0
+generated_by: 'ExtUtils::MakeMaker version 7.76, CPAN::Meta::Converter version 2.150010'
+license: unknown
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: LicenseChain-SDK
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Carp: '0'
+  Data::Dumper: '0'
+  Digest::HMAC: '1.03'
+  Digest::SHA: '5.8'
+  Encode: '0'
+  Exporter: '0'
+  HTTP::Tiny: '0'
+  JSON: '2.9'
+  LWP::UserAgent: '6'
+  List::Util: '0'
+  MIME::Base64: '0'
+  POSIX: '0'
+  Scalar::Util: '0'
+  Time::HiRes: '0'
+  Time::Piece: '0'
+  Time::Seconds: '0'
+  Try::Tiny: '0.3'
+  URI: '1.5'
+  URI::Escape: '0'
+  perl: '5.010'
+resources:
+  bugtracker: https://github.com/LicenseChain/LicenseChain-Perl-SDK/issues
+  homepage: https://docs.licensechain.app/sdks/perl
+  license: https://raw.githubusercontent.com/LicenseChain/LicenseChain-Perl-SDK/main/LICENSE
+  repository: https://github.com/LicenseChain/LicenseChain-Perl-SDK.git
+version: v1.0.0
+x_serialization_backend: 'CPAN::Meta::YAML version 0.020'
