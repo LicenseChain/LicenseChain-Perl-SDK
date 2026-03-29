@@ -3,6 +3,8 @@ package LicenseChain::Services::LicenseService;
 use strict;
 use warnings;
 use Exporter 'import';
+use Digest::SHA qw(sha256_hex);
+use Sys::Hostname qw(hostname);
 use LicenseChain::Utils qw(validate_uuid validate_not_empty sanitize_metadata validate_pagination);
 use LicenseChain::Exceptions qw(ValidationException);
 
@@ -71,12 +73,19 @@ sub revoke {
 }
 
 sub validate {
-    my ($self, $license_key) = @_;
+    my ($self, $license_key, $hwuid) = @_;
     validate_not_empty($license_key, 'license_key');
-    
-    # Use /licenses/verify endpoint with 'key' parameter to match API
-    my $response = $self->{client}->post('/licenses/verify', { key => $license_key });
+
+    my $resolved_hwuid = (defined($hwuid) && $hwuid ne '')
+        ? $hwuid
+        : _default_hwuid();
+    my $response = $self->{client}->post('/licenses/verify', { key => $license_key, hwuid => $resolved_hwuid });
     return $response->{valid} || 0;
+}
+
+sub _default_hwuid {
+    my $raw = join('|', 'licensechain', 'perl', hostname() || 'unknown', $^O || 'unknown', $]);
+    return sha256_hex($raw);
 }
 
 sub list_user_licenses {

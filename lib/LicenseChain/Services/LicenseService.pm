@@ -15,6 +15,7 @@ our @EXPORT_OK = qw(
     update
     revoke
     validate
+    verify_with_details
     list_user_licenses
     stats
 );
@@ -81,6 +82,17 @@ sub validate {
         : _default_hwuid();
     my $response = $self->{client}->post('/licenses/verify', { key => $license_key, hwuid => $resolved_hwuid });
     return $response->{valid} || 0;
+}
+
+sub verify_with_details {
+    my ( $self, $license_key, $hwuid ) = @_;
+    validate_not_empty( $license_key, 'license_key' );
+
+    my $resolved_hwuid = ( defined($hwuid) && $hwuid ne '' )
+      ? $hwuid
+      : _default_hwuid();
+    return $self->{client}->post( '/licenses/verify',
+        { key => $license_key, hwuid => $resolved_hwuid } );
 }
 
 sub _default_hwuid {

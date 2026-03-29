@@ -27,6 +27,7 @@ WriteMakefile(
         'Try::Tiny'               => 0.30,
         'Scalar::Util'            => 0,
         'List::Util'              => 0,
+        'Crypt::JWT'              => '0.034',
         'POSIX'                   => 0,
         'Time::Piece'             => 0,
         'Time::Seconds'           => 0,
