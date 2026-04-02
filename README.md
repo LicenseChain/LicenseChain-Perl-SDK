@@ -1,4 +1,4 @@
-﻿# LicenseChain Perl SDK
+# LicenseChain Perl SDK
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Perl](https://img.shields.io/badge/Perl-5.26+-blue.svg)](https://www.perl.org/)
@@ -428,6 +428,10 @@ prove -v t/client.t
 prove -v t/integration/
 ```
 
+## License assertion JWT (RS256 + JWKS)
+
+When Core API returns **`license_token`** and **`license_jwks_uri`**, verify offline with **`LicenseChain::LicenseAssertion->verify_license_assertion_jwt`** (`Crypt::JWT` + JWKS; claim **`token_use`** = **`licensechain_license_v1`**). A minimal **JWKS-only** CLI is **`examples/jwks_only.pl`** — set **`LICENSECHAIN_LICENSE_TOKEN`** and **`LICENSECHAIN_LICENSE_JWKS_URI`** (optional **`LICENSECHAIN_EXPECTED_APP_ID`**), then `perl examples/jwks_only.pl` (same env names as Go/Rust/PHP; [JWKS_EXAMPLE_PRIORITY](https://github.com/LicenseChain/sdks/blob/main/docs/JWKS_EXAMPLE_PRIORITY.md)).
+
 ## ðŸ“ Examples
 
 See the `examples/` directory for complete examples:
@@ -435,6 +439,7 @@ See the `examples/` directory for complete examples:
 - `basic_usage.pl` - Basic SDK usage
 - `advanced_features.pl` - Advanced features and configuration
 - `webhook_integration.pl` - Webhook handling
+- `jwks_only.pl` — RS256 `license_token` via JWKS only ([JWKS_EXAMPLE_PRIORITY](https://github.com/LicenseChain/sdks/blob/main/docs/JWKS_EXAMPLE_PRIORITY.md))
 
 ## ðŸ¤ Contributing
 
