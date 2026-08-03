@@ -8,7 +8,7 @@ Official Perl SDK for LicenseChain - Secure license management for Perl applicat
 
 ## 🚀 Features
 
-- **ðŸ” Secure Authentication** - User registration, login, and session management
+- **🔐 Secure Authentication** - User registration, login, and session management
 - **📜 License Management** - Create, validate, update, and revoke licenses
 - **🛡 Hardware ID Validation** - Prevent license sharing and unauthorized access
 - **🔔 Webhook Support** - Real-time license events and notifications
@@ -432,7 +432,7 @@ prove -v t/integration/
 
 When Core API returns **`license_token`** and **`license_jwks_uri`**, verify offline with **`LicenseChain::LicenseAssertion->verify_license_assertion_jwt`** (`Crypt::JWT` + JWKS; claim **`token_use`** = **`licensechain_license_v1`**). A minimal **JWKS-only** CLI is **`examples/jwks_only.pl`** — set **`LICENSECHAIN_LICENSE_TOKEN`** and **`LICENSECHAIN_LICENSE_JWKS_URI`** (optional **`LICENSECHAIN_EXPECTED_APP_ID`**), then `perl examples/jwks_only.pl` (same env names as Go/Rust/PHP; [JWKS_EXAMPLE_PRIORITY](https://docs.licensechain.app/)).
 
-## ðŸ“ Examples
+## 📝 Examples
 
 See the `examples/` directory for complete examples:
 
@@ -441,7 +441,7 @@ See the `examples/` directory for complete examples:
 - `webhook_integration.pl` - Webhook handling
 - `jwks_only.pl` — RS256 `license_token` via JWKS only ([JWKS_EXAMPLE_PRIORITY](https://docs.licensechain.app/))
 
-## ðŸ¤ Contributing
+## 🤝 Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
