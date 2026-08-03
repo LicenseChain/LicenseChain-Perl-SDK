@@ -6,18 +6,18 @@
 
 Official Perl SDK for LicenseChain - Secure license management for Perl applications.
 
-## ðŸš€ Features
+## 🚀 Features
 
 - **ðŸ” Secure Authentication** - User registration, login, and session management
-- **ðŸ“œ License Management** - Create, validate, update, and revoke licenses
+- **📜 License Management** - Create, validate, update, and revoke licenses
 - **ðŸ›¡ï¸ Hardware ID Validation** - Prevent license sharing and unauthorized access
-- **ðŸ”” Webhook Support** - Real-time license events and notifications
-- **ðŸ“Š Analytics Integration** - Track license usage and performance metrics
+- **🔔 Webhook Support** - Real-time license events and notifications
+- **📊 Analytics Integration** - Track license usage and performance metrics
 - **âš¡ High Performance** - Optimized for production workloads
-- **ðŸ”„ Async Operations** - Non-blocking HTTP requests and data processing
+- **🔄 Async Operations** - Non-blocking HTTP requests and data processing
 - **ðŸ› ï¸ Easy Integration** - Simple API with comprehensive documentation
 
-## ðŸ“¦ Installation
+## 📦 Installation
 
 ### Method 1: CPAN (Recommended)
 
@@ -56,7 +56,7 @@ make test
 make install
 ```
 
-## ðŸš€ Quick Start
+## 🚀 Quick Start
 
 ### Basic Setup
 
@@ -178,7 +178,7 @@ $client->set_webhook_handler(sub {
 $client->start_webhook_listener();
 ```
 
-## ðŸ“š API Reference
+## 📚 API Reference
 
 ### LicenseChain::SDK
 
@@ -282,7 +282,7 @@ my $result = $client->track_event($event_name, $properties);
 my $result = $client->get_analytics($time_range);
 ```
 
-## ðŸ”§ Configuration
+## 🔧 Configuration
 
 ### Environment Variables
 
@@ -342,7 +342,7 @@ my $result = $client->validate_hardware_id($license_key, $hardware_id);
 - Expiration checking
 - Feature-based access control
 
-## ðŸ“Š Analytics and Monitoring
+## 📊 Analytics and Monitoring
 
 ### Event Tracking
 
@@ -373,7 +373,7 @@ if ($result->{success}) {
 }
 ```
 
-## ðŸ”„ Error Handling
+## 🔄 Error Handling
 
 ### Custom Error Types
 
@@ -406,7 +406,7 @@ my $client = LicenseChain::SDK->new({
 });
 ```
 
-## ðŸ§ª Testing
+## 🧪 Testing
 
 ### Unit Tests
 
@@ -453,18 +453,18 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 4. Build: `perl Makefile.PL && make`
 5. Test: `prove -l t/`
 
-## ðŸ“„ License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ðŸ†˜ Support
+## 🆘 Support
 
 - **Documentation**: [https://docs.licensechain.app/perl](https://docs.licensechain.app/perl)
 - **Issues**: [GitHub Issues](https://github.com/LicenseChain/LicenseChain-Perl-SDK/issues)
 - **Discord**: [LicenseChain Discord](https://discord.gg/licensechain)
 - **Email**: support@licensechain.app
 
-## ðŸ”— Related Projects
+## 🔗 Related Projects
 
 - [LicenseChain JavaScript SDK](https://github.com/LicenseChain/LicenseChain-JavaScript-SDK)
 - [LicenseChain Python SDK](https://github.com/LicenseChain/LicenseChain-Python-SDK)
