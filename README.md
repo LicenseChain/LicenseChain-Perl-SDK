@@ -10,12 +10,12 @@ Official Perl SDK for LicenseChain - Secure license management for Perl applicat
 
 - **ðŸ” Secure Authentication** - User registration, login, and session management
 - **📜 License Management** - Create, validate, update, and revoke licenses
-- **ðŸ›¡ï¸ Hardware ID Validation** - Prevent license sharing and unauthorized access
+- **🛡 Hardware ID Validation** - Prevent license sharing and unauthorized access
 - **🔔 Webhook Support** - Real-time license events and notifications
 - **📊 Analytics Integration** - Track license usage and performance metrics
-- **âš¡ High Performance** - Optimized for production workloads
+- **⚡ High Performance** - Optimized for production workloads
 - **🔄 Async Operations** - Non-blocking HTTP requests and data processing
-- **ðŸ› ï¸ Easy Integration** - Simple API with comprehensive documentation
+- **🛠 Easy Integration** - Simple API with comprehensive documentation
 
 ## 📦 Installation
 
@@ -314,7 +314,7 @@ my $client = LicenseChain::SDK->new({
 });
 ```
 
-## ðŸ›¡ï¸ Security Features
+## 🛡 Security Features
 
 ### Hardware ID Protection
 
@@ -471,7 +471,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [LicenseChain Node.js SDK](https://github.com/LicenseChain/LicenseChain-NodeJS-SDK)
 ---
 
-**Made with â¤ï¸ for the Perl community**
+**Made with ❤️ for the Perl community**
 
 
 ## API Endpoints
