@@ -2,6 +2,8 @@
 
 ## [1.0.2] - 2026-10-10
 
+- Declared missing runtime dependency `Data::UUID` in `Makefile.PL` (required by `Utils.pm`).
+- Added GitHub Actions CI matrix for Perl 5.36/5.38/5.40.
 - Raised Perl floor to 5.36 (`use 5.036` / `MIN_PERL_VERSION => 5.036`) to match the documented modern baseline.
 - Bumped module `$VERSION` to 1.0.2.
 

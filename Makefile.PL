@@ -28,6 +28,7 @@ WriteMakefile(
         'Scalar::Util'            => 0,
         'List::Util'              => 0,
         'Crypt::JWT'              => '0.034',
+        'Data::UUID'              => 0,
         'POSIX'                   => 0,
         'Time::Piece'             => 0,
         'Time::Seconds'           => 0,
