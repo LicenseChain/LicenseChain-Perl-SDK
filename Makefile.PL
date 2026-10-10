@@ -61,7 +61,7 @@ WriteMakefile(
         prereqs => {
             runtime => {
                 requires => {
-                    perl => '5.010',
+                    perl => '5.036',
                 },
             },
         },
