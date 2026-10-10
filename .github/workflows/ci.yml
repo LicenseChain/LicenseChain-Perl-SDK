@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        perl: ["5.36", "5.38", "5.40"]
+    steps:
+      - uses: actions/checkout@v7
+      - name: Set up Perl
+        uses: shogo82148/actions-setup-perl@v1
+        with:
+          perl-version: ${{ matrix.perl }}
+      - name: Install deps and test
+        run: |
+          cpanm --quiet --notest --installdeps .
+          perl Makefile.PL
+          make test
