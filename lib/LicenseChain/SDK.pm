@@ -24,7 +24,7 @@ our @EXPORT_OK = qw(
     from_environment
 );
 
-our $VERSION = '1.0.0';
+our $VERSION = '1.0.2';
 
 sub new {
     my ($class, $config) = @_;

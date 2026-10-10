@@ -1,4 +1,4 @@
-use 5.010;
+use 5.036;
 use strict;
 use warnings;
 use ExtUtils::MakeMaker;
@@ -9,7 +9,7 @@ WriteMakefile(
     ABSTRACT_FROM       => 'lib/LicenseChain/SDK.pm',
     AUTHOR              => 'LicenseChain Team <support@licensechain.app>',
     LICENSE             => 'Elastic-2.0',
-    MIN_PERL_VERSION    => '5.010',
+    MIN_PERL_VERSION    => '5.036',
     PREREQ_PM => {
         'Carp'                    => 0,
         'Data::Dumper'            => 0,
