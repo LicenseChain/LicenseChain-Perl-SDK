@@ -1,8 +1,8 @@
 # LicenseChain Perl SDK
 
 [![License](https://img.shields.io/badge/license-Elastic--2.0-blue.svg)](LICENSE)
-[![Perl](https://img.shields.io/badge/Perl-5.26+-blue.svg)](https://www.perl.org/)
-[![CPAN](https://img.shields.io/badge/CPAN-LicenseChain--SDK-blue.svg)](https://metacpan.org/pod/LicenseChain::SDK)
+[![Perl](https://img.shields.io/badge/Perl-5.36+-blue.svg)](https://www.perl.org/)
+[![CPAN](https://img.shields.io/badge/CPAN-not%20published-lightgrey.svg)](https://github.com/LicenseChain/LicenseChain-Perl-SDK)
 
 Official Perl SDK for LicenseChain - Secure license management for Perl applications.
 
@@ -19,41 +19,40 @@ Official Perl SDK for LicenseChain - Secure license management for Perl applicat
 
 ## 📦 Installation
 
-### Method 1: CPAN (Recommended)
+Intended distribution is CPAN (dist `LicenseChain-SDK`, module `LicenseChain::SDK`) once a PAUSE upload succeeds; the GitHub Packages sidebar stays empty by design (not used).
+
+### Method 1: From GitHub (current)
 
 ```bash
-# Install via CPAN
-cpan LicenseChain::SDK
+# Install directly with cpanm
+cpanm https://github.com/LicenseChain/LicenseChain-Perl-SDK.git
 
-# Or via cpanm
-cpanm LicenseChain::SDK
-```
-
-### Method 2: Manual Installation
-
-```bash
-# Clone the repository
+# Or clone and install locally
 git clone https://github.com/LicenseChain/LicenseChain-Perl-SDK.git
 cd LicenseChain-Perl-SDK
-
-# Install dependencies
 cpanm --installdeps .
-
-# Build and install
 perl Makefile.PL
 make
 make test
 make install
 ```
 
-### Method 3: Local Installation
+### Method 2: Local prefix install
 
 ```bash
-# Install to local directory
 perl Makefile.PL PREFIX=~/perl5
 make
 make test
 make install
+```
+
+### Method 3: CPAN (after first publish)
+
+```bash
+# Dist name on CPAN: LicenseChain-SDK
+# Module name: LicenseChain::SDK
+cpan LicenseChain::SDK
+cpanm LicenseChain::SDK
 ```
 
 ## 🚀 Quick Start
