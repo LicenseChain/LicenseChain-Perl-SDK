@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/badge/license-Elastic--2.0-blue.svg)](LICENSE)
 [![Perl](https://img.shields.io/badge/Perl-5.36+-blue.svg)](https://www.perl.org/)
 [![CPAN](https://img.shields.io/badge/CPAN-not%20published-lightgrey.svg)](https://github.com/LicenseChain/LicenseChain-Perl-SDK)
+[![CI](https://github.com/LicenseChain/LicenseChain-Perl-SDK/actions/workflows/ci.yml/badge.svg)](https://github.com/LicenseChain/LicenseChain-Perl-SDK/actions/workflows/ci.yml)
 
 Official Perl SDK for LicenseChain - Secure license management for Perl applications.
 
@@ -472,14 +473,12 @@ This project is licensed under the Elastic License 2.0 (ELv2) — see the [LICEN
 
 **Made with ❤️ for the Perl community**
 
-
 ## API Endpoints
 
 All endpoints automatically use the /v1 prefix when connecting to https://api.licensechain.app.
 
 ### Base URL
 - **Production**: https://api.licensechain.app/v1\n- **Development**: https://api.licensechain.app/v1\n\n### Available Endpoints\n\n| Method | Endpoint | Description |\n|--------|----------|-------------|\n| GET | /v1/health | Health check |\n| POST | /v1/auth/login | User login |\n| POST | /v1/auth/register | User registration |\n| GET | /v1/apps | List applications |\n| POST | /v1/apps | Create application |\n| GET | /v1/licenses | List licenses |\n| POST | /v1/licenses/verify | Verify license |\n| GET | /v1/webhooks | List webhooks |\n| POST | /v1/webhooks | Create webhook |\n| GET | /v1/analytics | Get analytics |\n\n**Note**: The SDK automatically prepends /v1 to all endpoints, so you only need to specify the path (e.g., /auth/login instead of /v1/auth/login).
-
 
 ## LicenseChain API (v1)
 
