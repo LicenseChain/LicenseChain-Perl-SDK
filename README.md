@@ -1,6 +1,6 @@
 # LicenseChain Perl SDK
 
-[![License](https://img.shields.io/badge/license-Elastic--2.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Perl](https://img.shields.io/badge/Perl-5.36+-blue.svg)](https://www.perl.org/)
 [![CPAN](https://img.shields.io/badge/CPAN-not%20published-lightgrey.svg)](https://github.com/LicenseChain/LicenseChain-Perl-SDK)
 [![CI](https://github.com/LicenseChain/LicenseChain-Perl-SDK/actions/workflows/ci.yml/badge.svg)](https://github.com/LicenseChain/LicenseChain-Perl-SDK/actions/workflows/ci.yml)
@@ -477,7 +477,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ## 📄 License
 
-This project is licensed under the Elastic License 2.0 (ELv2) — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License (ELv2) — see the [LICENSE](LICENSE) file for details.
 
 ## 🆘 Support
 
